@@ -1,0 +1,462 @@
+# Default mapping of Minecraft blocks to Minetest nodes.
+#
+# This file is encoded in ASCII. Comment lines start with a #. The data consists
+# of two comma-separated columns.  The first column contains the Minecraft block
+# name in one of the following formats:
+#
+# n
+# n:m
+# BLOCK_NAME
+# BLOCK_NAME:m
+# BLOCK_NAME:DATA_NAME
+#
+# Where n and m are integer numbers for block ID and data value respectively and
+# BLOCK_NAME and DATA_NAME are the names of constants in the
+# org.pepsoft.minecraft.Constants class.
+#
+# If the data value is not specified, all data values for that block ID are
+# mapped to the specified Minetest node. If it is specified, only that specific
+# data value is mapped.
+#
+# The second column contains the Minetest node name.
+
+BLK_AIR, air
+# TODO: types of stone:
+BLK_STONE, default:stone
+BLK_GRASS, default:dirt_with_grass
+# Not a Minecraft block, but placed by the Minetest post processor:
+BLK_GRASS:15, default:dirt_with_snow
+# TODO: permadirt and podzol:
+BLK_DIRT, default:dirt
+BLK_COBBLESTONE, default:cobble
+BLK_WOODEN_PLANK, default:wood
+BLK_SAPLING:DATA_OAK, default:sapling
+BLK_SAPLING:DATA_PINE, default:pine_sapling
+# Not actually the same:
+BLK_SAPLING:DATA_BIRCH, default:aspen_sapling
+BLK_SAPLING:DATA_JUNGLE, default:junglesapling
+BLK_SAPLING:DATA_ACACIA_SAPLING, default:acacia_sapling
+# BLK_BEDROCK
+BLK_WATER, default:water_source
+BLK_STATIONARY_WATER, default:water_source
+ 
+BLK_LAVA, default:lava_source
+BLK_STATIONARY_LAVA, default:lava_source
+BLK_SAND:0, default:sand
+BLK_SAND:1, default:desert_sand
+BLK_GRAVEL, default:gravel
+BLK_GOLD_ORE, default:stone_with_gold
+BLK_IRON_ORE, default:stone_with_iron
+BLK_COAL, default:stone_with_coal
+BLK_WOOD:0, default:tree
+BLK_WOOD:1, default:pine_tree
+BLK_WOOD:2, default:aspen_tree
+BLK_WOOD:3, default:jungletree
+BLK_WOOD:4, default:tree
+BLK_WOOD:5, default:pine_tree
+BLK_WOOD:6, default:aspen_tree
+BLK_WOOD:7, default:jungletree
+BLK_WOOD:8, default:tree
+BLK_WOOD:9, default:pine_tree
+BLK_WOOD:10, default:aspen_tree
+BLK_WOOD:11, default:jungletree
+BLK_WOOD:12, default:tree
+BLK_WOOD:13, default:pine_tree
+BLK_WOOD:14, default:aspen_tree
+BLK_WOOD:15, default:jungletree
+BLK_LEAVES:0, default:leaves
+BLK_LEAVES:1, default:pine_needles
+BLK_LEAVES:2, default:aspen_leaves
+BLK_LEAVES:3, default:jungleleaves
+BLK_LEAVES:4, default:leaves
+BLK_LEAVES:5, default:pine_needles
+BLK_LEAVES:6, default:aspen_leaves
+BLK_LEAVES:7, default:jungleleaves
+BLK_LEAVES:8, default:leaves
+BLK_LEAVES:9, default:pine_needles
+BLK_LEAVES:10, default:aspen_leaves
+BLK_LEAVES:11, default:jungleleaves
+BLK_LEAVES:12, default:leaves
+BLK_LEAVES:13, default:pine_needles
+BLK_LEAVES:14, default:aspen_leaves
+BLK_LEAVES:15, default:jungleleaves
+# BLK_SPONGE
+ 
+BLK_GLASS, default:glass
+# BLK_LAPIS_LAZULI_ORE
+# BLK_LAPIS_LAZULI_BLOCK
+# BLK_DISPENSER
+BLK_SANDSTONE, default:sandstone
+# BLK_NOTE_BLOCK
+BLK_BED:0, beds:bed_top
+BLK_BED:1, beds:bed_top
+BLK_BED:2, beds:bed_top
+BLK_BED:3, beds:bed_top
+BLK_BED:4, beds:bed_bottom
+BLK_BED:5, beds:bed_bottom
+BLK_BED:6, beds:bed_bottom
+BLK_BED:7, beds:bed_bottom
+BLK_POWERED_RAILS, carts:powerrail
+# BLK_DETECTOR_RAILS
+# 29
+
+# BLK_COBWEB
+BLK_TALL_GRASS:0, default:dry_shrub
+BLK_TALL_GRASS:1, default:grass_3
+# TODO any way to get a fern:
+BLK_TALL_GRASS:2, default:grass_4
+BLK_DEAD_SHRUBS, default:dry_shrub
+#BLK_PISTON
+#BLK_PISTON_HEAD
+BLK_WOOL:DATA_WHITE, wool:white
+BLK_WOOL:DATA_ORANGE, wool:orange
+BLK_WOOL:DATA_MAGENTA, wool:magenta
+# TODO: or blue:
+BLK_WOOL:DATA_LIGHT_BLUE, wool:cyan
+BLK_WOOL:DATA_YELLOW, wool:yellow
+BLK_WOOL:DATA_LIME, wool:green
+BLK_WOOL:DATA_PINK, wool:pink
+BLK_WOOL:DATA_GREY, wool:dark_grey
+BLK_WOOL:DATA_LIGHT_GREY, wool:grey
+BLK_WOOL:DATA_CYAN, wool:cyan
+BLK_WOOL:DATA_PURPLE, wool:violet
+BLK_WOOL:DATA_BLUE, wool:blue
+BLK_WOOL:DATA_BROWN, wool:brown
+BLK_WOOL:DATA_GREEN, wool:dark_green
+BLK_WOOL:DATA_RED, wool:red
+BLK_WOOL:DATA_BLACK, wool:black
+# BLK_PISTON_EXTENSION
+BLK_DANDELION, flowers:dandelion_yellow
+# The flowers are mapped to preserve their colour, as much as possible:
+BLK_ROSE:0, flowers:rose
+BLK_ROSE:1, flowers:geranium
+BLK_ROSE:2, flowers:viola
+BLK_ROSE:3, flowers:dandelion_white
+BLK_ROSE:4, flowers:rose
+BLK_ROSE:5, flowers:tulip
+BLK_ROSE:6, flowers:dandelion_white
+BLK_ROSE:7, flowers:viola
+BLK_ROSE:8, flowers:dandelion_white
+BLK_BROWN_MUSHROOM, flowers:mushroom_brown
+
+BLK_RED_MUSHROOM, flowers:mushroom_red
+BLK_GOLD_BLOCK, default:goldblock
+BLK_IRON_BLOCK, default:steelblock
+BLK_DOUBLE_SLAB:0, default:stone_block
+BLK_DOUBLE_SLAB:1, default:sandstone_block
+BLK_DOUBLE_SLAB:3, default:cobble
+BLK_DOUBLE_SLAB:4, default:brick
+BLK_DOUBLE_SLAB:5, default:stonebrick
+BLK_DOUBLE_SLAB:8, default:stone_block
+BLK_DOUBLE_SLAB:9, default:sandstone_block
+BLK_SLAB:0, stairs:slab_stone
+BLK_SLAB:1, stairs:slab_sandstone
+BLK_SLAB:3, stairs:slab_cobble
+BLK_SLAB:4, stairs:slab_stone
+BLK_SLAB:5, stairs:slab_stonebrick
+BLK_SLAB:7, stairs:slab_stone
+BLK_BRICKS, default:brick
+BLK_TNT, tnt:tnt
+BLK_BOOKCASE, default:bookshelf
+BLK_MOSSY_COBBLESTONE, default:mossycobble
+BLK_OBSIDIAN, default:obsidian
+
+BLK_TORCH, default:torch
+BLK_FIRE, fire:basic_flame
+#BLK_MONSTER_SPAWNER
+# TODO directions:
+BLK_WOODEN_STAIRS, stairs:stair_wood
+BLK_CHEST, default:chest
+# TODO: should redstone be mapped to mese, and redstone related blocks to corresponding mesecons blocks?
+#BLK_REDSTONE_WIRE
+BLK_DIAMOND_ORE, default:stone_with_diamond
+BLK_DIAMOND_BLOCK, default:diamondblock
+#BLK_CRAFTING_TABLE
+BLK_WHEAT:0, farming:wheat_1
+BLK_WHEAT:1, farming:wheat_2
+BLK_WHEAT:2, farming:wheat_3
+BLK_WHEAT:3, farming:wheat_4
+BLK_WHEAT:4, farming:wheat_5
+BLK_WHEAT:5, farming:wheat_6
+BLK_WHEAT:6, farming:wheat_7
+BLK_WHEAT:7, farming:wheat_8
+
+BLK_TILLED_DIRT, farming:soil
+BLK_TILLED_DIRT:7, farming:soil_wet
+BLK_FURNACE, default:furnace
+BLK_BURNING_FURNACE, default:furnace_active
+#BLK_SIGN
+# TODO: find out how these work:
+BLK_WOODEN_DOOR, doors:door_wood_a
+BLK_LADDER, default:ladder_wood
+BLK_RAILS, carts:rail
+# TODO directions:
+BLK_COBBLESTONE_STAIRS, stairs:stair_cobble
+BLK_WALL_SIGN, default:sign_wall_wood
+#BLK_LEVER
+
+#BLK_STONE_PRESSURE_PLATE
+# TODO: find out how these work:
+BLK_IRON_DOOR, doors:door_steel_a
+#BLK_WOODEN_PRESSURE_PLATE
+#BLK_REDSTONE_ORE
+#BLK_GLOWING_REDSTONE_ORE
+#BLK_REDSTONE_TORCH_OFF
+#BLK_REDSTONE_TORCH_ON
+#BLK_STONE_BUTTON
+BLK_SNOW, default:snow
+BLK_ICE, default:ice
+
+BLK_SNOW_BLOCK, default:snowblock
+BLK_CACTUS, default:cactus
+BLK_CLAY, default:clay
+BLK_SUGAR_CANE, default:papyrus
+#BLK_JUKEBOX
+# TODO: directions:
+BLK_FENCE, default:fence_wood
+#BLK_PUMPKIN
+#BLK_NETHERRACK
+#BLK_SOUL_SAND
+#BLK_GLOWSTONE
+
+#BLK_PORTAL
+#BLK_JACK_O_LANTERN
+#BLK_CAKE
+#BLK_REDSTONE_REPEATER_OFF
+#BLK_REDSTONE_REPEATER_ON
+# Stained glass; is there such a thing in Minetest:
+95, default:glass
+BLK_TRAPDOOR, doors:trapdoor
+#BLK_HIDDEN_SILVERFISH
+BLK_STONE_BRICKS, default:stonebrick
+#BLK_HUGE_BROWN_MUSHROOM
+
+#BLK_HUGE_RED_MUSHROOM
+BLK_IRON_BARS, xpanes:bar
+BLK_GLASS_PANE, xpanes:pane
+#BLK_MELON
+#BLK_PUMPKIN_STEM
+#BLK_MELON_STEM
+# TODO: support vines and ropes mod? For now replace with air, since this block is placed by the Swamp and Jungle layers:
+BLK_VINES, air
+# TODO: directions:
+BLK_FENCE_GATE:0, doors:gate_wood_closed
+BLK_FENCE_GATE:1, doors:gate_wood_closed
+BLK_FENCE_GATE:2, doors:gate_wood_closed
+BLK_FENCE_GATE:3, doors:gate_wood_closed
+BLK_FENCE_GATE:4, doors:gate_wood_open
+BLK_FENCE_GATE:5, doors:gate_wood_open
+BLK_FENCE_GATE:6, doors:gate_wood_open
+BLK_FENCE_GATE:7, doors:gate_wood_open
+# TODO: directions:
+BLK_BRICK_STAIRS, stairs:stair_brick
+BLK_STONE_BRICK_STAIRS, stairs:stair_stonebrick
+
+#BLK_MYCELIUM
+BLK_LILY_PAD, flowers:waterlily
+#BLK_NETHER_BRICK
+#BLK_NETHER_BRICK_FENCE
+#BLK_NETHER_BRICK_STAIRS
+#BLK_NETHER_WART
+#BLK_ENCHANTMENT_TABLE
+#BLK_BREWING_STAND
+#BLK_CAULDRON
+#BLK_END_PORTAL
+
+#BLK_END_PORTAL_FRAME
+#BLK_END_STONE
+#BLK_DRAGON_EGG
+#BLK_REDSTONE_LANTERN_OFF
+#BLK_REDSTONE_LANTERN_ON
+BLK_DOUBLE_WOODEN_SLAB:DATA_OAK, default:wood
+BLK_DOUBLE_WOODEN_SLAB:DATA_PINE, default:pine_wood
+BLK_DOUBLE_WOODEN_SLAB:DATA_BIRCH, default:aspen_wood
+BLK_DOUBLE_WOODEN_SLAB:DATA_JUNGLE, default:junglewood
+BLK_DOUBLE_WOODEN_SLAB:DATA_ACACIA_SAPLING, default:wood
+BLK_WOODEN_SLAB:DATA_OAK, stairs:slab_wood
+BLK_WOODEN_SLAB:DATA_PINE, stairs:slab_pine_wood
+BLK_WOODEN_SLAB:DATA_BIRCH, stairs:slab_aspen_wood
+BLK_WOODEN_SLAB:DATA_JUNGLE, stairs:slab_junglewood
+BLK_WOODEN_SLAB:DATA_ACACIA_SAPLING, stairs:slab_wood
+# TODO: for now replace with air, since this block is placed by the Jungle layer:
+BLK_COCOA_PLANT, air
+# TODO: directions:
+BLK_SANDSTONE_STAIRS, stairs:stair_sandstone
+# TODO: should we map emerald to copper:
+#BLK_EMERALD_ORE
+
+BLK_ENDER_CHEST, default:chest
+#BLK_TRIPWIRE_HOOK
+#BLK_TRIPWIRE
+#BLK_EMERALD_BLOCK
+# TODO: directions:
+BLK_PINE_WOOD_STAIRS, stairs:stair_pine_wood
+BLK_BIRCH_WOOD_STAIRS, stairs:stair_aspen_wood
+BLK_JUNGLE_WOOD_STAIRS, stairs:stair_junglewood
+#BLK_COMMAND_BLOCK
+#BLK_BEACON
+BLK_COBBLESTONE_WALL, walls:cobble
+
+#BLK_FLOWER_POT
+# TODO: support farming mods?
+#BLK_CARROTS
+#BLK_POTATOES
+#BLK_WOODEN_BUTTON
+#BLK_HEAD
+#BLK_ANVIL
+BLK_TRAPPED_CHEST, default:chest
+#BLK_WEIGHTED_PRESSURE_PLATE_LIGHT
+#BLK_WEIGHTED_PRESSURE_PLATE_HEAVY
+#BLK_REDSTONE_COMPARATOR_UNPOWERED
+
+#BLK_REDSTONE_COMPARATOR_POWERED
+#BLK_DAYLIGHT_SENSOR
+#152
+#BLK_QUARTZ_ORE
+#BLK_HOPPER
+#155
+#BLK_QUARTZ_STAIRS
+#BLK_ACTIVATOR_RAIL
+#BLK_DROPPER
+# TODO: this loses all colours:
+BLK_STAINED_CLAY, default:clay
+
+# TODO: is there such a thing as stained glass in Minetest:
+BLK_STAINED_GLASS_PANE, xpanes:pane
+BLK_LEAVES2:0, default:acacia_leaves
+BLK_LEAVES2:4, default:acacia_leaves
+BLK_LEAVES2:8, default:acacia_leaves
+BLK_LEAVES2:12, default:acacia_leaves
+BLK_WOOD2:0, default:acacia_tree
+BLK_WOOD2:4, default:acacia_tree
+BLK_WOOD2:8, default:acacia_tree
+BLK_WOOD2:12, default:acacia_tree
+# TODO: directions:
+BLK_ACACIA_WOOD_STAIRS, stairs:stair_acacia_wood
+#BLK_DARK_OAK_WOOD_STAIRS
+#BLK_SLIME_BLOCK
+#BLK_BARRIER
+BLK_IRON_TRAPDOOR, doors:trapdoor_steel
+#168
+#169
+
+# TODO: straw is not the same as hay:
+170, farming:straw
+#BLK_CARPET
+# TODO: also mapped from BLK_RED_SANDSTONE:
+BLK_HARDENED_CLAY, default:desert_stone
+BLK_COAL_BLOCK, default:coalblock
+BLK_PACKED_ICE, default:ice
+# TODO: map to regular grass and flowers for now, but perhaps there is a mod for tall flowers:
+BLK_LARGE_FLOWERS:0, flowers:dandelion_yellow
+BLK_LARGE_FLOWERS:1, flowers:viola
+BLK_LARGE_FLOWERS:2, default:grass_5
+BLK_LARGE_FLOWERS:3, default:grass_5
+BLK_LARGE_FLOWERS:4, flowers:rose
+BLK_LARGE_FLOWERS:5, flowers:viola
+# Top halves:
+BLK_LARGE_FLOWERS:8, air
+BLK_LARGE_FLOWERS:9, air
+BLK_LARGE_FLOWERS:10, air
+BLK_LARGE_FLOWERS:11, air
+BLK_LARGE_FLOWERS:12, air
+BLK_LARGE_FLOWERS:13, air
+#BLK_STANDING_BANNER
+#BLK_WALL_BANNER
+#BLK_DAYLIGHT_SENSOR_INVERTED
+# TODO: also mapped from BLK_HARDENED_CLAY:
+BLK_RED_SANDSTONE, default:desert_stone
+
+BLK_RED_SANDSTONE_STAIRS, stairs:stair_desert_stone
+BLK_DOUBLE_RED_SANDSTONE_SLAB, default:desert_stone_block
+BLK_RED_SANDSTONE_SLAB, stairs:slab_desert_stone
+BLK_PINE_WOOD_FENCE_GATE:0, doors:gate_pine_wood_closed
+BLK_PINE_WOOD_FENCE_GATE:1, doors:gate_pine_wood_closed
+BLK_PINE_WOOD_FENCE_GATE:2, doors:gate_pine_wood_closed
+BLK_PINE_WOOD_FENCE_GATE:3, doors:gate_pine_wood_closed
+BLK_PINE_WOOD_FENCE_GATE:4, doors:gate_pine_wood_open
+BLK_PINE_WOOD_FENCE_GATE:5, doors:gate_pine_wood_open
+BLK_PINE_WOOD_FENCE_GATE:6, doors:gate_pine_wood_open
+BLK_PINE_WOOD_FENCE_GATE:7, doors:gate_pine_wood_open
+BLK_BIRCH_WOOD_FENCE_GATE:0, doors:gate_aspen_wood_closed
+BLK_BIRCH_WOOD_FENCE_GATE:1, doors:gate_aspen_wood_closed
+BLK_BIRCH_WOOD_FENCE_GATE:2, doors:gate_aspen_wood_closed
+BLK_BIRCH_WOOD_FENCE_GATE:3, doors:gate_aspen_wood_closed
+BLK_BIRCH_WOOD_FENCE_GATE:4, doors:gate_aspen_wood_open
+BLK_BIRCH_WOOD_FENCE_GATE:5, doors:gate_aspen_wood_open
+BLK_BIRCH_WOOD_FENCE_GATE:6, doors:gate_aspen_wood_open
+BLK_BIRCH_WOOD_FENCE_GATE:7, doors:gate_aspen_wood_open
+BLK_JUNGLE_WOOD_FENCE_GATE:0, doors:gate_junglewood_closed
+BLK_JUNGLE_WOOD_FENCE_GATE:1, doors:gate_junglewood_closed
+BLK_JUNGLE_WOOD_FENCE_GATE:2, doors:gate_junglewood_closed
+BLK_JUNGLE_WOOD_FENCE_GATE:3, doors:gate_junglewood_closed
+BLK_JUNGLE_WOOD_FENCE_GATE:4, doors:gate_junglewood_open
+BLK_JUNGLE_WOOD_FENCE_GATE:5, doors:gate_junglewood_open
+BLK_JUNGLE_WOOD_FENCE_GATE:6, doors:gate_junglewood_open
+BLK_JUNGLE_WOOD_FENCE_GATE:7, doors:gate_junglewood_open
+#BLK_DARK_OAK_WOOD_FENCE_GATE
+BLK_ACACIA_WOOD_FENCE_GATE:0, doors:gate_acacia_wood_closed
+BLK_ACACIA_WOOD_FENCE_GATE:1, doors:gate_acacia_wood_closed
+BLK_ACACIA_WOOD_FENCE_GATE:2, doors:gate_acacia_wood_closed
+BLK_ACACIA_WOOD_FENCE_GATE:3, doors:gate_acacia_wood_closed
+BLK_ACACIA_WOOD_FENCE_GATE:4, doors:gate_acacia_wood_open
+BLK_ACACIA_WOOD_FENCE_GATE:5, doors:gate_acacia_wood_open
+BLK_ACACIA_WOOD_FENCE_GATE:6, doors:gate_acacia_wood_open
+BLK_ACACIA_WOOD_FENCE_GATE:7, doors:gate_acacia_wood_open
+BLK_PINE_WOOD_FENCE, default:fence_pine_wood
+BLK_BIRCH_WOOD_FENCE, default:fence_aspen_wood
+
+BLK_JUNGLE_WOOD_FENCE, default:fence_junglewood
+#BLK_DARK_OAK_WOOD_FENCE
+BLK_ACACIA_WOOD_FENCE, default:fence_acacia_wood
+# TODO: find out how these work:
+# TODO: loses wood type:
+BLK_PINE_WOOD_DOOR, doors:door_wood_a
+BLK_BIRCH_WOOD_DOOR, doors:door_wood_a
+BLK_JUNGLE_WOOD_DOOR, doors:door_wood_a
+BLK_ACACIA_WOOD_DOOR, doors:door_wood_a
+BLK_DARK_OAK_WOOD_DOOR, doors:door_wood_a
+#BLK_END_ROD
+#BLK_CHORUS_PLANT
+
+#BLK_CHORUS_FLOWER
+#BLK_PURPUR_BLOCK
+#BLK_PURPUR_PILLAR
+#BLK_PURPUR_STAIRS
+#BLK_DOUBLE_PURPUR_SLAB
+#BLK_PURPUR_SLAB
+#BLK_END_BRICKS
+#BLK_BEETROOTS
+# TODO: or perhaps dirt with grass and footsteps:
+BLK_GRASS_PATH, default:dirt_with_grass
+#BLK_END_GATEWAY
+
+#BLK_REPEATING_COMMAND_BLOCK
+#BLK_CHAIN_COMMAND_BLOCK
+BLK_FROSTED_ICE, default:ice
+#BLK_MAGMA
+#214
+#215
+#BLK_BONE_BLOCK
+#217
+#BLK_OBSERVER
+#BLK_WHITE_SHULKER_BOX
+
+#BLK_ORANGE_SHULKER_BOX
+#BLK_MAGENTA_SHULKER_BOX
+#BLK_LIGHT_BLUE_SHULKER_BOX
+#BLK_YELLOW_SHULKER_BOX
+#BLK_LIME_SHULKER_BOX
+#BLK_PINK_SHULKER_BOX
+#BLK_GREY_SHULKER_BOX
+#BLK_LIGHT_GREY_SHULKER_BOX
+#BLK_CYAN_SHULKER_BOX
+#BLK_PURPLE_SHULKER_BOX
+
+#BLK_BLUE_SHULKER_BOX
+#BLK_BROWN_SHULKER_BOX
+#BLK_GREEN_SHULKER_BOX
+#BLK_RED_SHULKER_BOX
+#BLK_BLACK_SHULKER_BOX
+
+#BLK_STRUCTURE_BLOCK
